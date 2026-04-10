@@ -1,5 +1,3 @@
-from pages.customer_login import CustomerLogin
-
 
 def test_incorrect_login(login_page):
     login_page.open_page()

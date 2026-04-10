@@ -1,6 +1,3 @@
-from pages.base_page import BasePage
-from pages.triangle_page import TrianglePage
-
 
 def test_triangle_page(triangle_page):
     triangle_page.open_page()
