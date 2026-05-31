@@ -34,7 +34,9 @@ nosetests.xml
 coverage.xml
 *.cover
 *.pyo
-__pycache__
+# Игнорировать все папки с кэшем Python
+__pycache__/
+
 
 # Расширения Windows/macOS
 Thumbs.db
