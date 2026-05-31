@@ -1,3 +1,4 @@
+from pages.locators.login_page_locs import login_button_loc, username_loc
 
 def test_incorrect_login(login_page):
     login_page.open_page()
