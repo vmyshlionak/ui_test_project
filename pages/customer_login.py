@@ -7,7 +7,7 @@ class CustomerLogin(BasePage):
     page_url = '/simulated-login/'
 
     def scroll_below(self):
-        self.driver.execute_script('window.scrollTo(500, document.body.scrollHeight);')
+        self.driver.execute_script('window.scrollTo(0, document.body.scrollHeight/2);')
         sleep(2)
 
     def scroll_to_element_js(self, element):
@@ -16,9 +16,10 @@ class CustomerLogin(BasePage):
 
     def login_and_password(self, username, password):
         username_field = self.find(loc.username_loc)
-        self.scroll_to_element_js(username_field)
+        # self.scroll_to_element_js(username_field)
         username_field.send_keys(username)
         password_field = self.find(loc.password_loc)
+        # self.scroll_to_element_js(password_field)
         password_field.send_keys(password)
         # login_button = self.find(loc.login_button_loc)
         # self.scroll_to_element_js(login_button)

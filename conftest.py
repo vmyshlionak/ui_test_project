@@ -10,6 +10,7 @@ from pages.triangle_page import TrianglePage
 def driver():
     options = Options()
     options.add_argument('--headless')
+    options.add_argument('--start-maximized')
     chrome_driver = webdriver.Chrome(options=options)
     return chrome_driver
 
